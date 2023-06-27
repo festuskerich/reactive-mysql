@@ -15,7 +15,7 @@ public class ReactiveMysqlApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ReactiveMysqlApplication.class, args);
 	}
-	 @Bean
+	 //@Bean
     public ConnectionFactoryInitializer initializer(ConnectionFactory connectionFactory) {
         ConnectionFactoryInitializer initializer = new ConnectionFactoryInitializer();
         initializer.setConnectionFactory(connectionFactory);

@@ -1,0 +1,14 @@
+spring:
+    config:
+        import: optional:file:${user.dir}/application.local.properties
+    r2dbc:
+        url: r2dbc:mysql://localhost:3306/loan?tlsVersion=TLSv1.2
+        username: root
+        password: Coder_1234
+        pool:
+            max-size: 10
+            enabled: true
+            max-idle-time: 30000
+logging:
+    level:
+      '[org.springframework.data.r2dbc]': DEBUG
